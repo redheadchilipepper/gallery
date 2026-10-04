@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #191919;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif;
+    }
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Exactly 3 per row */
+      gap: 14px;
+      width: 100%;
+    }
+    .album-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-decoration: none;
+      transition: transform 0.15s ease;
+    }
+    .album-item:hover {
+      transform: translateY(-3px);
+    }
+    .album-art {
+      width: 100%;
+      aspect-ratio: 1 / 1; /* Guaranteed true square */
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: none;
+    }
+    .album-title {
+      margin-top: 7px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.81);
+      padding-left: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="album-grid">
+    <!-- Album 1: Uni -->
+    <a href="https://app.notion.com/p/university-3ef3b8eeef7b8075a66fe902c46853f1?source=copy_link" target="_top" class="album-item">
+      <img src="paramore.jpg" class="album-art" alt="university">
+      <span class="album-title">university</span>
+    </a>
+
+    <!-- Album 2: Meals -->
+    <a href="https://app.notion.com/p/meal-planning-3ef3b8eeef7b80e39d0ace14da168754?source=copy_link" target="_top" class="album-item">
+      <img src="davidbowie.jpg" class="album-art" alt="meal planning">
+      <span class="album-title">meal planning</span>
+    </a>
+
+    <!-- Album 3: Finances -->
+    <a href="https://app.notion.com/p/finances-3ef3b8eeef7b80f3901ada556e755954?source=copy_link" target="_top" class="album-item">
+      <img src="metallica.jpg" class="album-art" alt="finances">
+      <span class="album-title">finances</span>
+    </a>
+
+    <!-- 4. Screen & Sound -->
+    <a href="https://app.notion.com/p/screen-sound-3ef3b8eeef7b80309538f5460f60ad3a?source=copy_link" target="_top" class="album-item">
+      <img src="themarias.jpg" class="album-art" alt="screen & sound">
+      <span class="album-title">screen & sound</span>
+    </a>
+
+    <!-- 5. Reading Room -->
+    <a href="https://app.notion.com/p/reading-3ef3b8eeef7b8013a1e6e7d8a85d835f?source=copy_link" target="_top" class="album-item">
+      <img src="gorillaz.jpg" class="album-art" alt="reading">
+      <span class="album-title">reading</span>
+    </a>
+
+    <!-- 6. Wardrobe -->
+    <a href="https://app.notion.com/p/wardrobe-3ef3b8eeef7b8016b3f5d57b797633e1?source=copy_link" target="_top" class="album-item">
+      <img src="rhcp.jpg" class="album-art" alt="wardrobe">
+      <span class="album-title">wardrobe</span>
+    </a>
+  </div>
+
+</body>
+</html>
